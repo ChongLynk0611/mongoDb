@@ -1,0 +1,33 @@
+Mongodb:
+	cài đặt mongodb-server
+	kiểm tra trạng thái mongodb: sudo systemctl status mongodb
+	start server : sudo systemctl start mongodb
+	stop server: sudo systemctl stop mongodb
+	restart server: sudo systemctl restart mongodb
+	tự động khởi động server: sudo systemctl enable mongodb
+	tắt tự động khởi động:sudo systemctl disable mongodb
+	để truy cập vào mongodb thì dùng lệnh: mongo
+	xem databsae: show databases;
+cài đặt Robo 3T:
+	trình quản lý mongo databases
+	
+các lệnh cơ bản mongoDb:
+	collection : tương tự table
+	Document : tương tự tuple/row
+	field: tương đương với colum
+	priramy key: được mặc định là _id
+	
+
+	Tạo database: use databaseName
+	xem database đang sử dụng: db
+	xem tất cả database trong hệ thống: show dbs
+	lấy dữ liệu trong collection: db.collectionName.find()		method: .prettey() : để lấy dữ liệu về theo kiểu đã định sẵn
+	truy vấn điều kiện: db.collectionName.find(condition)
+		bằng {key:value}
+		nhỏ hơn(less than) {key:{$lt:value}}
+		nhỏ hơn hoặc bằng(les than equals): {key:{$lte:value}}
+		lớn hơn (greater than)	:{key:{$gt:value}}
+		lớn hơn hoặc bằng ( greater than equals): {key:{$gte:value}}
+		khác(not equals): {key:{$ne:value}}
+		trong(in) : {key:{$in[value1,value2,...]}}
+		không thuộc(not in):{key:{$nin[value1,value2,...]}} 
