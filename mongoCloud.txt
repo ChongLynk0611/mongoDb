@@ -1,0 +1,7 @@
+monggo cloud:
+	Tạo 1 project trên monggo cloud
+	Tạo quyền truy cập vào database: vào database access
+	quản lý các ip có thể truy cập tới database : vào network access , danh sách whitelist a ip addr là danh sách các ip được truy cập đến database
+	connect có url để connect đến database 
+	
+	
